@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background: #edf2f8;
+}
+.boder-primary-400 {
+  border: 2px solid #a775f1;
+}
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.testimonial:last-child {
+  grid-column-start: 4;
+  grid-row: 1 / 3;
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+}
+
+.testimonial {
+  box-shadow: 0rem 0.2rem 7rem;
+  padding: 2rem;
+  border-radius: 0.5em;
+}
+.testimonial:nth-child(1) {
+  background: #fca311;
+}
+.testimonial:nth-child(2) {
+  color: #fff;
+  background: #fca311;
+}
+.testimonial:nth-child(3) {
+  color: #000;
+  background: #e2e2e2;
+}
+.testimonial:nth-child(4) {
+  color: #fff;
+  background: #e36414;
+}
+.testimonial:nth-child(5) {
+  color: #000;
+  background: #e4e4e4;
+}
